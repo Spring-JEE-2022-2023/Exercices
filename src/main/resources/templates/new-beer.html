@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert new beer</title>
+</head>
+<body>
+
+<form action="#" th:action="@{/save-beer}" th:object="${beer}" method="post">
+    <table border="1">
+        
+        <tr>
+            <td><label th:text="Nom" /></td>
+            <td><input type="text" th:field="*{name}" /></td>
+        </tr>
+        
+        <tr>
+            <td><label th:text="Prix" /></td>
+            <td><input type="number" th:field="*{price}" /></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

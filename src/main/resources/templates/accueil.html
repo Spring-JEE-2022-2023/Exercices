@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Beershop - liste des bières</title>
+</head>
+
+
+<body>
+	<h1>Bières:</h1>
+	<table>
+	<!--  itertaions sur les bieres -->
+	<tr th:each="beer: ${beers}"> <!-- beers est le nom de la variable fourni dans le modèle au niveau du conrolleur -->
+    	<td th:text="${beer.name}" />
+    	<td th:text="${beer.price}" />
+	</tr>
+    </table>
+    
+    <a href="/new-beer">Enregistrer une nouvelle bière</a>
+</body>
+
+</body>
+</html>
