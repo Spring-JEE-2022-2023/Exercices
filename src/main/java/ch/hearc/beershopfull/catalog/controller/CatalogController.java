@@ -1,4 +1,4 @@
-package ch.hearc.beershopfull.catalog;
+package ch.hearc.beershopfull.catalog.controller;
 
 import java.util.ArrayList;
 

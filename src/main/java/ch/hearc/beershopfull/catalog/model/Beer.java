@@ -1,5 +1,7 @@
 package ch.hearc.beershopfull.catalog.model;
 
+import java.math.BigDecimal;
+
 /**
  * Model of a beer
  * @author Seb
@@ -8,7 +10,7 @@ package ch.hearc.beershopfull.catalog.model;
 public class Beer {
 
 	public String name;
-	public Integer price;
+	public BigDecimal price;
 	
 	public String getName() {
 		return name;
@@ -16,10 +18,10 @@ public class Beer {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Integer getPrice() {
+	public BigDecimal getPrice() {
 		return price;
 	}
-	public void setPrice(Integer price) {
+	public void setPrice(BigDecimal price) {
 		this.price = price;
 	}
 	
